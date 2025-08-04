@@ -1,0 +1,14 @@
+# src/main/resources/application.yml
+spring:
+  data:
+    elasticsearch:
+      client:
+        reactive:
+          hosts: localhost:9200
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+logging:
+  level:
+    org.springframework.data.elasticsearch: DEBUG
