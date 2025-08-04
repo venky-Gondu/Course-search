@@ -49,24 +49,26 @@ The application loads course data from a JSON file at startup and provides a `/a
 
 ```
 src/
-├── main/
-│   ├── java/com/course/course_search/
-│   │   ├── CourseSearchApplication.java
-│   │   ├── controller/
-│   │   │   └── CourseSearchController.java
-│   │   ├── service/
-│   │   │   ├── CourseSearchService.java
-│   │   │   └── DataLoaderService.java
-│   │   ├── repository/
-│   │   │   └── CourseRepository.java
-│   │   ├── documents/
-│   │   │   └── CourseDocument.java
-│   │   ├── dto/
-│   │   │   └── CourseSearchRequest.java
-│   │   └── config/
-│   │       └── JacksonConfig.java
-│   └── resources/
-│       └── sample-courses.json
+ └── main/
+     ├── java/
+     │   └── com.course.course_search/
+     │       ├── CourseSearchApplication.java
+     │       ├── controller/
+     │       │   └── CourseSearchController.java
+     │       ├── service/
+     │       │   ├── SearchService.java
+     │       │   └── DataLoaderService.java
+     │       ├── repository/
+     │       │   └── CourseRepository.java
+     │       ├── documents/
+     │       │   └── CourseDocument.java
+     │       └── dto/
+     │           ├── SearchRequest.java
+     │           └── SearchResponse.java
+     ├── resources/
+     │   ├── application.yml
+     │   ├── sample-courses.json
+     │   └── docker-compose.yml
 ```
 
 ---
